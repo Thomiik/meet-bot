@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">  
+  </head>
+  <body>
+    <div id="nav">
+      <h1>Meet-bot</h1>
+      
+      <p>Coded by <a class="rainbow" href="https://github.com/Thomiik" target="_blank">$Tom</a></p>
+    </div>
+    <!--
+    What do i need:
+      Meet URL => input-text // The google meet url
+      How many times => input-number // How many times do you want to be in the call
+      AutoMute => input-tick // Auto turn off the microphone
+      AutoBlind => input-tick // Auto turn off the camera
+      Reset => button // Reset the form
+      Start => button // Start everything up
+    -->
+    <div id="container">
+      <form id="create">
+        <h1>Join</h1>
+        <small></small>
+        <input type="url" name="link" placeholder="https://meet.google.com/*" class="input"><br>
+        <small></small>
+        <input type="number" name="time" placeholder="Number 1 - 100" class="input" min="1" max="100"><br>
+        <input type="checkbox" name="micOff" checked class="checkbox">
+        <label for="micOff" class="checkbox">Auto-disable microphone</label><br>
+        <input type="checkbox" name="camOff" checked class="checkbox">
+        <label for="checkbox" class="checkbox">Auto-disable camera</label><br>
+        <button type="submit">Start</button>
+        <button type="reset">Reset</button>
+  
+      </form>
+    </div>
+
+    <div id="manage">
+
+    </div>
+
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Meet-Bot",
+  "description": "Spam your meet call with yourself :)",
+  "version": "0.0.1",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_title": "Meet-Bot",
+    "default_popup": "popup.html",
+    "default_icon": "icon.jpg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "meetBot.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
